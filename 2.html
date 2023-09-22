@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Home</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        /* Center the main title */
+        .block {
+            
+            text-align: center;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        /* Style for articles */
+        article {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 15px;
+            background-color: #fff;
+        }
+        /* Fixed bar at the bottom for new article */
+        .fixed-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        /* Larger textarea */
+        .fixed-bar textarea {
+            width: 80%;
+            height: 100px;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        /* Larger placeholder text */
+        .fixed-bar textarea::placeholder {
+            font-size: 18px;
+            color: #aaa;
+        }
+        /* Publish button styling */
+        .fixed-bar button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        .homebutton{
+            float:left
+        }
+
+        h1{
+            float: unset;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">
+        <div class="homebutton"><img src="./img/logo1小.jpg" alt=""></div>
+        <h1>Your Home</h1>
+    </div>
+    
+
+    <h2>Your Articles</h2>
+
+    <article>
+        <h3>Article 1</h3>
+        <p>This is the content of article 1.</p>
+    </article>
+
+    <article>
+        <h3>Article 2</h3>
+        <p>This is the content of article 2.</p>
+    </article>
+
+    <article>
+        <h3>Article 3</h3>
+        <p>This is the content of article 3.</p>
+    </article>
+
+    <article>
+        <h3>Article 4</h3>
+        <p>This is the content of article 4.</p>
+    </article>
+
+    <!-- Fixed bar at the bottom -->
+    <div class="fixed-bar">
+        <textarea placeholder="Write your new article here..."></textarea>
+        <button>Publish</button>
+    </div>
+
+</body>
+</html>
